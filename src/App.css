@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.sidebar {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+section .content {
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.banner {
+  /* background-color: #282c34; */
+  background-color: black;
+  color: white;
+}
+
+.content h1 {
+  font-size: 4rem;
+}
+
+.content p {
+  font-size: 1.8rem;
+}
+
+.skills {
+  background-color: #f5f5f5;
+  color: #333;
+}
+.skills h2{
+    font-size: 5rem;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  padding: 20px;
+  padding-bottom: 200px;
+  width: 900px;
+}
+
+.skills-grid .skill {
+  border: 5px solid #007bff;
+  border-radius: 10px;
+  padding: 20px;
+  /* padding-top: 40px; */
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+.skills-grid .skill:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.mail-me {
+  background-color: #e8f5e9;
+  color: #333;
+  padding: 20px;
+}
+
+.mail-me h2 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.mail-me p {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  min-width: 600px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  min-width: 750px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+  height: 150px;
+}
+
+button {
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
