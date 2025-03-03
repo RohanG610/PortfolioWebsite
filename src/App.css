@@ -6,7 +6,6 @@
   background-color: white;
   color: black;
 }
-
 body, html {
   height: 100%;
   width: 100%;
@@ -14,10 +13,16 @@ body, html {
 
 /* Navbar */
 .navbar {
-  max-width: 100%;
+  max-width: 50%;
   padding: 12px 24px;
+  padding-right: 0;
   top: 0;
+  margin-top: 15px;
   left: 0;
+  display: block;
+  transform: translate(77.5%,0%); /*Need Vairablity here for various devices*
+  /* background-color: red; */
+  margin-right: 0;
   z-index: 10;
 }
 
@@ -28,7 +33,7 @@ body, html {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-right: 50px;
+  /* margin-right: 50px; */
   gap: 20px;
 }
 
@@ -37,7 +42,7 @@ body, html {
   color: black;
   font-family: 'Inter', sans-serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 36px;
   transition: color 0.3s;
 }
 
@@ -103,7 +108,7 @@ body, html {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 72px;
+  gap: auto; /*72px*/
   margin-top: 20px;
 }
 
@@ -235,4 +240,32 @@ h3 {
 
 .textarea-field {
   height: 80px;
+}
+
+/*Skills Section*/
+.skills-container {
+  width: 100%;
+  min-height: 50px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+  padding: 10px 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.skills-wrapper {
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.skill-box {
+  background-color: #333;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  /* min-height: 500px; */
+
 }
