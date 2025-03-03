@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css"; // Go up one level to find App.css
+import "./style/Hero.css"; // Go up one level to find App.css
 
 const Hero = () => {
     return (

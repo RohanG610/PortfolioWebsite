@@ -1,0 +1,44 @@
+.hero-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    max-width: 100%;
+    gap: 52px;
+    padding: 30px 111px;
+    margin-top: 44px; /* Adjust for navbar height */
+  }
+  
+  .hero-tinkered{
+    margin-top: 150px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .hero-left {
+    margin-top: 0px;
+    max-width: 734px; /* Control width of left section */
+  }
+  
+  .hero-heading {
+    font-size: 128px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .hero-description {
+    font-size: 32px;
+    line-height: 1.6;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+  }
+  
+  .hero-right {
+    width: 458px;
+    height: 458px;
+    margin-top: 45px;
+    border-radius: 30px;
+    background-color: #D9D9D9;
+  }
+  

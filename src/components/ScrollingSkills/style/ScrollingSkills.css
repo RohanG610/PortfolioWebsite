@@ -1,0 +1,28 @@
+
+/*Skills Section*/
+.skills-container {
+    width: 100%;
+    min-height: 50px;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    padding: 10px 0;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+.skills-wrapper {
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    white-space: nowrap;
+  }
+  
+.skill-box {
+    background-color: #333;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    /* min-height: 500px; */
+}
+  

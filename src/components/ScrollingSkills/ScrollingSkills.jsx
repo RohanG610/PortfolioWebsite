@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import "../App.css";
+import "./style/ScrollingSkills.css";
 
 const skills = [
   "HTML", "CSS", "JavaScript", "React", "Vite", "Node.js", "Express.js"
