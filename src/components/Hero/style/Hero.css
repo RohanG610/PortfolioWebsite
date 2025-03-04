@@ -31,7 +31,7 @@
     line-height: 1.6;
     text-align: center;
     font-family: 'Inter', sans-serif;
-    color: #333;
+    color: var(--secondary-color);
   }
   
   .hero-right {

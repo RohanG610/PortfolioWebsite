@@ -66,3 +66,21 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+/* Reset any default margin or padding */
+* {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+}
+:root{
+  --primary-color: #00A6FB;
+  --secondary-color: #0582CA;
+  --background-color: #051923;
+}
+body, html {
+  height: 100%;
+  width: 100%;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}

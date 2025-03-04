@@ -1,12 +1,15 @@
 .navbar {
-    max-width: 100%;
-    padding: 12px 24px;
+    min-width: 75%;
+    padding: 24px;
     top: 0;
     left: 0;
     z-index: 10;
+    position: relative;
+    justify-self: center;
+    /* border: 1px solid black; */
 }
-  
-  /* Adjust navbar links positioning */
+
+/* Adjust navbar links positioning */
 .nav-links {
     display: flex;
     justify-content: flex-end;
@@ -18,13 +21,34 @@
 
 .nav-links a {
     text-decoration: none;
-    color: black;
+    /* color: black; */
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     font-size: 36px;
-    transition: color 0.3s;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+/* Background fill animation */
+.nav-links a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: black;
+    transition: width 0.4s ease-in-out;
+    z-index: -1; /* Places it behind the text */
+}
+
+/* On hover, expand background and change text color */
+.nav-links a:hover::before {
+    width: 100%;
 }
 
 .nav-links a:hover {
-    color: blue;
+    color: white; /* Text turns white */
 }

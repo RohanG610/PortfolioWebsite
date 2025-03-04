@@ -18,7 +18,7 @@ const ContactMe = () => {
             <div className="icon"></div>
             <div className="icon"></div>
             <div className="icon"></div>
-            {/* <div className="icon"></div> */}
+  
           </div>
         </div>
         <div className="divider"></div>
