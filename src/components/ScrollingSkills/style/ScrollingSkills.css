@@ -33,7 +33,7 @@
   height: 50px;
   text-align: center;
   vertical-align: middle;
-  background-color: #e11d48;
+  background-color: var(--secondary-color);
   border-radius: 6px;
   position: absolute;
   animation-timing-function: linear;
@@ -42,14 +42,16 @@
 }
 
 .itemLeft h2, .itemRight h2{
-  color: blue;
+  background-color: var(--primary-color);
+  color: #051923;
   align-self: center;
   padding-top: 12.5;
   border-radius: 6px 6px 0px 0px;
-  border: 1px solid purple;
+  border: 1px solid var(--primary-color);
 }
 
 .itemLeft p, .itemRight p{
+  color: #051923;
   background-color: transparent;
 }
 

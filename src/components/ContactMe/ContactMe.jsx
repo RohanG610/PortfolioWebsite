@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style/ContactMe.css";
 
 const ContactMe = () => {
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    // Add form submission logic here (e.g., send data to an API)
+  };
+
   return (
     <div className="contact-container">
       <h2>Contact me</h2>
@@ -18,15 +30,40 @@ const ContactMe = () => {
             <div className="icon"></div>
             <div className="icon"></div>
             <div className="icon"></div>
-  
           </div>
         </div>
         <div className="divider"></div>
         <div className="get-in-touch">
           <h3>Get in touch</h3>
-          <div className="input-field"></div>
-          <div className="input-field"></div>
-          <div className="textarea-field"></div>
+          <form onSubmit={handleSubmit}>
+            <input
+              className="input-field"
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+            <input
+              className="input-field"
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+            <textarea
+              className="textarea-field"
+              name="message"
+              placeholder="Your Message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            ></textarea>
+            <button className="submit-button" type="submit">Send Message</button>
+          </form>
         </div>
       </div>
     </div>
