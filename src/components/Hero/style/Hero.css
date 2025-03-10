@@ -1,44 +1,102 @@
+/* Base Styles */
 .hero-section {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    max-width: 100%;
-    gap: 52px;
-    padding: 30px 111px;
-    margin-top: 44px; /* Adjust for navbar height */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 5vw 12vw;
+  margin-top: 4vh;
+}
+
+/* Left Section */
+.hero-left {
+  max-width: 50vw;
+  order: 2; /* Ensure left comes second in stacking */
+}
+
+/* Hero Heading */
+.hero-heading {
+  font-size: clamp(48px, 10vw, 128px);
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Hero Description */
+.hero-description {
+  font-size: clamp(18px, 3vw, 32px);
+  line-height: 1.6;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: var(--secondary-color);
+}
+
+/* "Tinkered with" heading */
+.hero-tinkered {
+  margin-top: 5vh;
+  font-size: clamp(20px, 3vw, 32px);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Right Section */
+.hero-right {
+  width: clamp(250px, 30vw, 458px);
+  height: clamp(250px, 30vw, 458px);
+  border-radius: 5vw;
+  background-color: #D9D9D9;
+  order: 1; /* Ensure right part comes first in stacking */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1440px) {
+  .hero-section{
+    justify-content: center;
+    align-items: center;
+    gap: 5vw 9vw
   }
-  
-  .hero-tinkered{
-    margin-top: 150px;
-    font-family: 'Montserrat', sans-serif;
+  .hero-right{
+    display: none;
+  }
+}
+@media (max-width: 1024px) { /* Tablets */
+  .hero-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .hero-right {
+      order: 1; /* Right section appears first */
   }
   
   .hero-left {
-    margin-top: 0px;
-    max-width: 734px; /* Control width of left section */
+      order: 2;
+      max-width: 80vw;
   }
-  
+}
+
+@media (max-width: 768px) { /* Mobile Devices */
   .hero-heading {
-    font-size: 128px;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
+      font-size: clamp(32px, 8vw, 64px);
   }
-  
+
   .hero-description {
-    font-size: 32px;
-    line-height: 1.6;
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    color: var(--secondary-color);
+      font-size: clamp(16px, 5vw, 28px);
   }
-  
+
+  .hero-tinkered {
+      font-size: clamp(18px, 4vw, 24px);
+  }
+
   .hero-right {
-    width: 458px;
-    height: 458px;
-    margin-top: 45px;
-    border-radius: 30px;
-    background-color: #D9D9D9;
+      width: 80vw;
+      height: 80vw;
+      border-radius: 20px;
+      order: 1; /* Stays first */
   }
-  
+
+  .hero-left {
+      order: 2; /* Stays second */
+  }
+}
