@@ -50,3 +50,38 @@
 .nav-links a:hover {
     color: white; /* Text turns white */
 }
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .nav-links {
+        justify-content: center; /* Move links toward center */
+        gap: 30px; /* Reduce gap */
+    }
+
+    .nav-links a {
+        font-size: 20px; /* Reduce font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: center; /* Keep navbar centered */
+    }
+
+    .nav-links {
+        gap: 20px; /* Reduce gap further */
+    }
+
+    .nav-links a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        gap: 15px; /* Smallest gap */
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+}
