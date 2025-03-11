@@ -3,22 +3,22 @@ import "./style/Projects.css";
 
 const projects = [
   {
-    title: "Project #1",
-    technologies: "Python/Flutter/Javascript",
+    title: "StayLinked",
+    technologies: "Flutter/Firebase/GetX",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+      "An app that allow to track your family members, easily. Make sures that loved ones are always connected with no matter how far they are",
   },
   {
-    title: "Project #1",
-    technologies: "Python/Flutter/Javascript",
+    title: "Car Sales Dashboard",
+    technologies: "Python/Streamlit/SciPy",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+      "A simple dashboard that allows you to see car sales metrics.Note: data for car sales is from 2024",
   },
   {
-    title: "Project #1",
-    technologies: "Python/Flutter/Javascript",
+    title: "Project: Coming Soon",
+    technologies: "Tech Stack",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+      "Comming soon! Comming soon! Comming soon! Comming soon! Comming soon! Comming soon!",
   },
 ];
 
