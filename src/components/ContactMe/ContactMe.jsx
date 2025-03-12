@@ -22,14 +22,14 @@ const ContactMe = () => {
           <h3>Stay Connected</h3>
           <p>
             I am active on almost all the below social media, just say “hi” or
-            “we shall accelerate today,” will connect with you. Else, here is my
-            email: hello@gmail.com
+            “we shall accelerate today,” will connect with you, else, here is my
+            email: ozy@gmail.com
           </p>
           <div className="social-icons">
-            <div className="icon"></div>
-            <div className="icon"></div>
-            <div className="icon"></div>
-            <div className="icon"></div>
+            <div className="icon icon-discord"></div>
+            <div className="icon icon-github"></div>
+            <div className="icon icon-x"></div>
+            {/* <div className="icon"></div> */}
           </div>
         </div>
         <div className="divider"></div>

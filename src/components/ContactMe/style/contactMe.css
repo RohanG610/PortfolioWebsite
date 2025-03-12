@@ -63,17 +63,41 @@
 
 .social-icons {
   display: flex;
-  gap: 39px;
+  gap: 24px;
   margin-top: 33px;
 }
 
 .icon {
-  width: 63px;
-  height: 63px;
-  background: #ccc;
+  width: 48px;
+  height: 48px;
+  /* background: #ccc; */
   border-radius: 5px;
 }
-
+.icon:hover{
+  background-color: 10px;
+}
+.icon-discord{
+  background-position: right 0px bottom 6px;
+  background-color: purple;
+  -webkit-mask: url('src/assets/icons/discord.svg') no-repeat center;
+  mask: url('src/assets/icons/discord.svg') no-repeat center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.icon-github{
+  background-color: grey;
+  -webkit-mask: url('src/assets/icons/github.svg') no-repeat center;
+  mask: url('src/assets/icons/github.svg') no-repeat center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.icon-x{
+  background-color: white;
+  -webkit-mask: url('src/assets/icons/x-twitter.svg') no-repeat center;
+  mask: url('src/assets/icons/x-twitter.svg') no-repeat center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .input-field, .textarea-field {
   width: 100%;
   padding: 10px;
