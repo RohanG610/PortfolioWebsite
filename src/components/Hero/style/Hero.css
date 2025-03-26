@@ -49,9 +49,7 @@
   aspect-ratio: 1.0;
   border-radius: 5vw;
   background-image: url('src/assets/images/hero-section-img.webp');
-  
-  background-size:contain;
-  /* background-color: #D9D9D9; */
+  background-size: cover;
   order: 1; /* Ensure right part comes first in stacking */
 }
 

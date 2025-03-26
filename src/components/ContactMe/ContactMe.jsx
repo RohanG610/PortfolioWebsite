@@ -11,7 +11,6 @@ const ContactMe = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    // Add form submission logic here (e.g., send data to an API)
   };
 
   return (
@@ -29,7 +28,6 @@ const ContactMe = () => {
             <div className="icon icon-discord"></div>
             <div className="icon icon-github"></div>
             <div className="icon icon-x"></div>
-            {/* <div className="icon"></div> */}
           </div>
         </div>
         <div className="divider"></div>
