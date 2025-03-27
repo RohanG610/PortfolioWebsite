@@ -25,9 +25,9 @@ const ContactMe = () => {
             email: ozy@gmail.com
           </p>
           <div className="social-icons">
-            <div className="icon icon-discord"></div>
-            <div className="icon icon-github"></div>
-            <div className="icon icon-x"></div>
+            <a href="https://discord.com/users/r61033" target="_blank" rel="noopener noreferrer" className="icon icon-discord"></a>
+            <a href="https://github.com/RohanG610" target="_blank" rel="noopener noreferrer" className="icon icon-github"></a>
+            <a href="https://x.com/OzyBehindScreen" target="_blank" rel="noopener noreferrer" className="icon icon-x"></a>
           </div>
         </div>
         <div className="divider"></div>
